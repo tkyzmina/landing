@@ -1,0 +1,134 @@
+.features {
+  position: relative;
+  background-color: $color-blue-zodiac;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../img/bg2@1x.webp);
+  &__content {
+    margin-bottom: 25px;
+    padding-top: 120px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 0;
+    padding-bottom: 60px;
+    list-style: none;
+  }
+  &__list-item {
+    position: relative;
+    display: flex;
+    flex: 0 0 20%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 20%;
+  }
+  &__list-img {
+    margin-bottom: 20px;
+  }
+  &__list-text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-default-white;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+  }
+  &__form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  &__form-input,
+  &__form-upload {
+    flex: 1 0 31%;
+    max-width: 32%;
+    margin-right: 30px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &__form-range {
+    flex: 0 0 68%;
+    max-width: 68%;
+    padding: 0 15px;
+  }
+  @include vp-1279 {
+    &__content {
+      padding-top: 80px;
+    }
+  }
+  @include vp-1023 {
+    &__content {
+      padding-top: 60px;
+    }
+    &__list-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-bottom: 30px;
+    }
+    &__form {
+      padding-bottom: 60px;
+    }
+    &__form-range,
+    &__form-input,
+    &__form-upload {
+      margin-right: 3%;
+      margin-bottom: 30px;
+    }
+  }
+  @include vp-767 {
+    &__title {
+      font-size: 24px;
+      line-height: 120%;
+    }
+    &__list-img {
+      width: 70px;
+      height: 70px;
+    }
+    &__list-item {
+      padding: 0 5px;
+    }
+    &__form-row {
+      margin-bottom: 0;
+    }
+    &__form-range,
+    &__form-input,
+    &__form-upload {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  @include vp-374 {
+    &__list-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+  .btn {
+    width: 32%;
+    margin: 0 auto;
+  }
+}

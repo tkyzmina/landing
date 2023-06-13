@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта" />
+  <title>LandingPage</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <a href="#" class="header__logo">
+          <img src="img/svg/logo.svg" alt="Логотип Lorem" width="247" height="21">
+        </a>
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="active" href="#">Бизнес</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Цены</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__burger" type="button" aria-label="Open menu"></button>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="promo__img bg-img">
+          <div class="promo__img-wrapper bg-img__wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/bg@1x.webp, img/bg@2x.webp 2x" />
+              <img src="img/bg@1x.jpg" alt="Изображение менеджера" srcset="img/bg@2x.jpg 2x" width="1920"
+                height="850" />
+            </picture>
+          </div>
+        </div>
+        <div class="promo__wrapper container">
+          <div class="promo__content">
+            <h1 class="promo__title">
+              <em>Lorem ipsum</em> dolor sit </br>amet consectetur <em>adipiscing</em>
+            </h1>
+            <h3 class="promo__list-title">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </h3>
+            <ul class="promo__list">
+              <li class="promo__list-item">Totam rem aperiam eaque ipsa</li>
+              <li class="promo__list-item">
+                Sit voluptatem accusantium doloremque laudantium
+              </li>
+              <li class="promo__list-item">
+                Sed ut perspiciatis, unde omnis iste natus error
+              </li>
+            </ul>
+            <div class="promo__btn-container">
+              <a class="btn" href="# ">заказать</a>
+              <a class="btn btn--stroke" href="#">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="features__content container">
+          <h2 class="features__title title">Оформление <em>Заказа</em></h2>
+          <p class="features__text text text--regular">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+          <ul class="features__list">
+            <li class="features__list-item">
+              <svg class="features__list-img" width="100" height="100">
+                <use xlink:href="img/sprite.svg#ft1"></use>
+              </svg>
+              <p class="features__list-text">Lorem ipsum dolor
+                sit amet</p>
+            </li>
+            <li class="features__list-item">
+              <svg class="features__list-img" width="100" height="100">
+                <use xlink:href="img/sprite.svg#ft2"></use>
+              </svg>
+              <p class="features__list-text">Сonsecteturadipiscing elit</p>
+            </li>
+            <li class="features__list-item">
+              <svg class="features__list-img" width="100" height="100">
+                <use xlink:href="img/sprite.svg#ft3"></use>
+              </svg>
+              <p class="features__list-text">Sed do eiusmod tempor</p>
+            </li>
+            <li class="features__list-item">
+              <svg class="features__list-img" width="100" height="100">
+                <use xlink:href="img/sprite.svg#ft4"></use>
+              </svg>
+              <p class="features__list-text">Esse cillum dolore
+                eu fugiat</p>
+            </li>
+            <li class="features__list-item">
+              <svg class="features__list-img" width="100" height="100">
+                <use xlink:href="img/sprite.svg#ft5"></use>
+              </svg>
+              <p class="features__list-text">Excepteur sint occaecat cupidatat non proident</p>
+            </li>
+          </ul>
+        </div>
+
+        <form action="#" method="POST">
+          <div class="features__form container">
+            <div class="features__form-row">
+              <div class="features__form-input input-wrapper input-wrapper--select js-select">
+                <label>
+                  <input type="text" data-type="text" name="post" placeholder="Выберите из списка" required="required"
+                    readonly>
+                  <span class="input-wrapper__chevron">
+                    <svg width="21" height="21" role="img">
+                      <use xlink:href="img/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </span>
+                </label>
+                <ul class="input-wrapper__select-list">
+                  <li class="input-wrapper__select-item" tabindex="0" data-value="1">Sed ut perspiciatis
+                  </li>
+                  <li class="input-wrapper__select-item" tabindex="1" data-value="2">Nemo enim ipsam
+                  </li>
+                  <li class="input-wrapper__select-item" tabindex="2" data-value="3">Et harum quidem</li>
+                  <li class="input-wrapper__select-item" tabindex="3" data-value="4">Temporibus autem
+                  </li>
+                  <li class="input-wrapper__select-item" tabindex="4" data-value="5">Itaque earum rerum</li>
+                </ul>
+              </div>
+              <div class="features__form-input input-wrapper">
+                <label>
+                  <input type="email" data-type="email" placeholder="Ваш e-mail" name="email" value=""
+                    required="required">
+                </label>
+              </div>
+              <div class="features__form-input input-wrapper">
+                <label>
+                  <input type="text" data-type="text" placeholder="Ваше имя" name="name" value="" required="required">
+                </label>
+              </div>
+            </div>
+            <div class="features__form-row">
+              <div class="features__form-range input-wrapper input-wrapper--range">
+                <label for="customRange2" class="form-label">Example range</label>
+                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+              </div>
+              <div class="features__form-upload input-wrapper input-wrapper--upload">
+                <input type="file" id="file-input" name="file">
+                <label for="file-input">
+                  <svg width="18" height="21">
+                    <use xlink:href="img/sprite.svg#icon-file"></use>
+                  </svg>
+                  <span>Прикрепить&nbsp;файл</span>
+                </label>
+
+              </div>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+          </div>
+        </form>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <span class="footer__copyright">© 2018 «<em>LoremIpsum.net</em>» Все права защищены.</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <svg class="footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-qiwi"></use>
+              </svg>
+              <span class="footer__text">Qiwi wallet</span>
+            </li>
+            <li class="footer__item">
+              <svg class="footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-yandex-money"></use>
+              </svg>
+              <span class="footer__text">Yandex Money</span>
+            </li>
+            <li class="footer__item">
+              <svg class="footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-webmoney"></use>
+              </svg>
+              <span class="footer__text">Web Money</span>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <svg class="footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-letter"></use>
+              </svg>
+              <a class="footer__link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+            </li>
+            <li class="footer__item">
+              <svg class="footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+              <a class="footer__link" href="#" rel="noopener nofollow" target="_blank">Мы вконтакте</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 183px;
+  padding: 13px 32px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: $color-default-white;
+  text-transform: uppercase;
+
+  background-color: $color-summer-sky;
+  border: 1px solid $color-default-white;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+  &--stroke {
+    color: $color-black-russian;
+    background-color: $color-default-white;
+    border: 1px solid $color-dolphin;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

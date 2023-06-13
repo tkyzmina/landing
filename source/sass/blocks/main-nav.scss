@@ -1,0 +1,51 @@
+.main-nav {
+  &__list {
+    @include reset-list;
+    display: flex;
+  }
+  &__item {
+    margin-right: 60px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  a {
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-default-white;
+    text-transform: uppercase;
+    transition: color $trans-default;
+    &:hover {
+      color: $color-summer-sky;
+    }
+  }
+  .active {
+    color: $color-summer-sky;
+    &:hover {
+      color: lighten($color: $color-summer-sky, $amount: 10);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $color-black-russian;
+    opacity: 94%;
+    transition: transform $trans-default, opacity 0s, visibility 0s;
+    .main-nav__list {
+      flex-direction: column;
+    }
+    .main-nav__item {
+      width: 100%;
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      padding: 16px;
+    }
+  }
+}
