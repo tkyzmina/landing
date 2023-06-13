@@ -1,4 +1,4 @@
-# Check it on GH Pages[GitHub Pages](https://tkyzmina.github.io/landing/build/).
+# Check it on GH Pages [GitHub Pages](https://tkyzmina.github.io/landing/build/).
 
 Adaptive landing page with hamburger menu and custom input elements.
 
